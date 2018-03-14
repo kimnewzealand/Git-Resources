@@ -15,7 +15,7 @@
 
 ### Start a new project
 
-1: Add new `remote repository` in github.com with repository name **BookRecipes**, which is also known as the `origin`.  
+1. Add a new `remote repository` in github.com with repository name **BookRecipes**, which is also known as the `origin`.  
 2. Create a new local `working directory` **MyRecipes**. 
 
 ### Create a new file
@@ -46,7 +46,6 @@ cook(ingredients,pan)
 1. Open git bash and change directory to `working directory` **MyRecipes**.
 
 ```
-
 Home@LAPTOP-222WWW MINGW64 ~
 $ cd Documents
 
