@@ -1,4 +1,4 @@
-# GIT Simple Example Using Git Bash and R
+# GIT Simple Example New Project Using Git Bash and R
 
 
 + [Start a new project](#start-a-new-project)
