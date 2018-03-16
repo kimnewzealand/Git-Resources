@@ -22,7 +22,7 @@
 
 1. Create a a file in called **CrepeRecipe.md**, which is a basic recipe for making crepes, in the local `working directory` **MyRecipes**
 
-```
+```{r}
 # Load the package makecrepe
 library(makecrepe)
 
@@ -34,7 +34,7 @@ ingredients <- c(1 cup flour,
       3 tablespoons butter,
       4 large eggs)
 
-# Cook crepe using crepe functions from the package crepe
+# Cook crepe using crepe functions from the package makecrepe
 melt(butter)
 mix(ingredients)
 heat(pan)
@@ -45,7 +45,7 @@ cook(ingredients,pan)
 
 1. Open git bash and change directory to `working directory` **MyRecipes**.
 
-```
+```{bash}
 Home@LAPTOP-222WWW MINGW64 ~
 $ cd Documents
 
@@ -58,13 +58,13 @@ Home@LAPTOP-222WWW MINGW64 ~/Documents/MyRecipes (master)
 
 2. Initialize git tracking and version control on `working directory` **MyRecipes**.
 
-```
+```{bash}
 $ git init
 ```
 
 3. Copy the HTTPS link in github.com using the clipboard to add the `remote repository` or `origin`  as https://github.com/kimnewzealand/BookRecipes.git.
 
-```
+```{bash}
 $ git remote add origin https://github.com/kimnewzealand/BookRecipes.git
 ```
 
@@ -72,7 +72,7 @@ $ git remote add origin https://github.com/kimnewzealand/BookRecipes.git
 
 1. Add the file snapshot to the `index / staging area` locally.
 
-```
+```{bash}
 $ git add "CrepeRecipe.md"
 ```
 
@@ -80,13 +80,13 @@ $ git add "CrepeRecipe.md"
 
 1. Commit the file with the snapshot to the `local repository` locally.
 
-```
+```{bash}
 $ git commit -m "My first crepe recipe submission to the Recipe Book"
 ```
 
 2.  Push the file from the `local repository` `master` branch to the `origin` or `remote repository` `master` branch. The -u is used for the first push to set the `upstream` link between the two repositories.
  
-```
+```{bash}
 $ git push -u origin master
 ```
 
