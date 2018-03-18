@@ -2,16 +2,19 @@
 
 + [GIT Terminology](#git-terminology)
 + [Working with branches](#working-with-branches)
-+ [GIT Tags](#git-tags)+[GIT Stash](#git-stash)
++ [GIT Tags](#git-tags)
++ [GIT Stash](#git-stash)
 
 
 < br >
       
-## GIT Terminology+`origin`:connection pointing to the remote repository
-      
-+ `master`:name of your default branch. A branch in Git is simply a lightweight movable pointer to a commit.
+## GIT Terminology
 
-+ `HEAD`:pointer to the last commit of the branch you are currently on. If you are on the master branch,
++ `origin` : connection pointing to the remote repository
+      
++ `master` : name of your default branch. A branch in Git is simply a lightweight movable pointer to a commit.
+
++ `HEAD` : pointer to the last commit of the branch you are currently on. If you are on the master branch,
 then HEAD and master will refer to the same commit.
 
 ## GIT Commands
@@ -24,7 +27,6 @@ Remotes
 
 + git remote add < remote name > < url > : Creates a new connection to a remote repository  <
       remote name > is the shortcut for the < url > and is typically set to 'origin'
-      
 + `git remote show <remote name>` This command shows which branch is automatically pushed to when you run git push while on certain branches. It also shows you which remote branches on the server you don't yet have, which remote branches you have that have been removed from the server, and multiple local branches that are able to merge automatically with their remote-tracking branch when you run git pull.
 + `git remote rename <remote name> <new remote name>` to rename a remote
 + `git remote remove <remote name>` to remove a remote
@@ -70,7 +72,7 @@ Note on adding files to the remote:
 + When it is your first push from a repo, you will first have to make the link between the local and remote repository via: `git push  --set-upstream origin master`, or shorter `git push -u origin master`. As of then, `git push` will refer to the upstream branch you've set:i.e. origin /     master.
 
 
-< br >  < hr >
+<br> 
       
       
 ## GIT tags
@@ -78,17 +80,18 @@ Note on adding files to the remote:
 Git has the ability to tag specific points in history as being important. Typically people use this functionality to mark release points (v1.0, and so on). Use the command tag.
 
 ```
-$git tag v0.1
+$ git tag v0.1
 ```
 
 
-< br >  < hr >
+
       
 ## GIT Aliases
-+`git config --global alias.<shortname> <command>` to set up an alias for each command using git config
+
++ `git config --global alias.<shortname> <command>` to set up an alias for each command using git config
       
       
-< br >  < hr >
+
       
 ## Resources
       
