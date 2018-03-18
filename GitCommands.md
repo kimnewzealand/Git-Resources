@@ -6,7 +6,7 @@
 + [GIT Stash](#git-stash)
 
 
-< br >
+<br>
       
 ## GIT Terminology
 
@@ -25,7 +25,7 @@ Initialise
 
 Remotes
 
-+ git remote add < remote name > < url > : Creates a new connection to a remote repository  <
++ `git remote add < remote name > < url >` : Creates a new connection to a remote repository  <
       remote name > is the shortcut for the < url > and is typically set to 'origin'
 + `git remote show <remote name>` This command shows which branch is automatically pushed to when you run git push while on certain branches. It also shows you which remote branches on the server you don't yet have, which remote branches you have that have been removed from the server, and multiple local branches that are able to merge automatically with their remote-tracking branch when you run git pull.
 + `git remote rename <remote name> <new remote name>` to rename a remote
