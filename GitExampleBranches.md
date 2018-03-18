@@ -88,6 +88,6 @@ To https://github.com/martha/Recipes.git
 
 ## Resources
 
-+ [Happy Git and GitHub for the useR](http://happygitwithr.com/rmd-test-drive.html)
-+ [Pro Git book, written by Scott Chacon and Ben Straub ](https://git-scm.com/book/en/v2) under the Creative Commons Attribution Non Commercial Share Alike 3.0 license.
-+ [Version Control with Git by Software Carpentry](http://swcarpentry.github.io/git-novice/)
++ [Happy Git and GitHub for the useR by Jennifer Bryan](http://happygitwithr.com/rmd-test-drive.html) adapted under  [Creative Commons Attribution-NonCommercial 4.0 International License.](https://creativecommons.org/licenses/by/4.0/)
++ [Pro Git book, written by Scott Chacon and Ben Straub ](https://git-scm.com/book/en/v2) adapted under the [Creative Commons Attribution Non Commercial Share Alike 3.0 license](https://creativecommons.org/licenses/by/3.0/).
++ [Version Control with Git by Software Carpentry](http://swcarpentry.github.io/git-novice/) adapted under the [Attribution 4.0 International (CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)
