@@ -113,7 +113,7 @@ $ git tag v0.1
 
 ##  GIT Aliases
 
-+ `git config --global alias.<shortname> <command>` to set up an alias for each command using git config
++ `git config --global alias.<shortname> <command>` to set up an alias for each command using git config.
 
 
 ## Edit in Unix

@@ -19,7 +19,7 @@
 $ mkdir project
 ```
 
-4. In the command line, browse to the folder, or browse in explorer right click "Git Bash here" on the folder. 
+4. In the command line, browse to the folder, or browse in explorer right click "Git Bash here" on the folder.
 
 5. This folder is not currently under version control so the command init will create  a new subdirectory named .git that contains all of your necessary repository files and a Git repository skeleton. At this point you are working on your `master` branch, as a default.
 
@@ -64,7 +64,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ```
 
-At this point, still nothing in your project is tracked. To start version control we will need to create files or make changes then add and commit files. 
+At this point, still nothing in your project is tracked. To start version control we will need to create files or make changes then add and commit files.
 
 ```
 $ git add -A
@@ -92,19 +92,29 @@ Push the file from the `local repository` `master` branch to the `origin` or `re
 $ git push -u origin master
 ```
 
-Each file in your `working directory` can be tracked or untracked. 
+Each file in your `working directory` can be tracked or untracked.
 - Tracked files are files that were in the last snapshot; they can be unmodified, modified, or staged.  
 - Untracked files are any files in your working directory that were not in your last snapshot and are not in your staging area.
 
 
 <br><hr>
 
-## Collaberative workflow
+## Collaborative workflow
 
-Follow the basic workflow, except first update your local repo using the pull command.
+If you want to propose a change to someone else's repository, then first fork the repo in GitHub.
 
-```
-git pull origin master
-```
+This creates a copy of the repo in your GitHub account.
+
+Then follow the basic workflow, to clone the repo.
+
+ After you have made changes, push to the copy repo in your GitHub account.
+
+ Place a pull request from your fork on GitHub to the original repo owned by someone else.
 
 
+
+## Resources
+
++ [Happy Git and GitHub for the useR by Jennifer Bryan](http://happygitwithr.com/rmd-test-drive.html) adapted under  [Creative Commons Attribution-NonCommercial 4.0 International License.](https://creativecommons.org/licenses/by/4.0/)
++ [Pro Git book, written by Scott Chacon and Ben Straub ](https://git-scm.com/book/en/v2) adapted under the [Creative Commons Attribution Non Commercial Share Alike 3.0 license](https://creativecommons.org/licenses/by/3.0/).
++ [Version Control with Git by Software Carpentry](http://swcarpentry.github.io/git-novice/) adapted under the [Attribution 4.0 International (CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)
