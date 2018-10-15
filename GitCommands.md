@@ -43,8 +43,7 @@ Remotes
 Branches
 
 + `git branch <new branch name>` adds a new branch, a structure with trees for saved states of files
-+ `git checkout <branch name> <filename>` checks out (i.e., restores) an old version of a file
-+ `git checkout -- <file>...` discards changes in working directory
++ `git checkout <branch name> <filename>` checks out (i.e. switches to another version) an old version of a file
 + `git branch` lists all of the branches in a repository, with a * next to the branch you are currently on
 + `git checkout <branch-name>` switches to another branch-name
 + `git checkout -b branch-name>` creates the branch and switches you to it
@@ -74,8 +73,9 @@ Remove
 + `git clean -f` will then delete those files.
 
 Undo
-+ `git checkout -- <filename>`discards the changes that have not yet been staged
-+ `git reset HEAD filename>` undo changes that have been staged
+
++ `git reset` undo ALL changes that have been staged with git add
++ `git reset HEAD <filename>` undo changes to a specific filename that have been staged on HEAD
 
 Commit
 
@@ -96,7 +96,7 @@ Push
 
 Note on adding files to the remote:
 
-+ When it is your first push from a repo, you will first have to make the link between the local and remote repository via: `git push  --set-upstream origin master`, or shorter `git push -u origin master`. As of then, `git push` will refer to the upstream branch you've set:i.e. origin /     master.
++ When it is your first push from a repo, you will first have to make the link between the local and remote repository via: `git push  --set-upstream origin master`, or shorter `git push -u origin master`. As of then, `git push` will refer to the upstream branch you've set: i.e. origin / master.
 
 
 <br>
