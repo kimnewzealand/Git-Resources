@@ -52,11 +52,18 @@ heat(pan)
 cook(ingredients,pan)
 ```
 
+### Change branch
 
+1. If you need to work on another branch `dev-branch` then switch to this branch and replace `master` with `dev-branch` in the steps below
+
+```{bash}
+$ git branch dev-branch
+$ git checkout dev-branch
+```
 
 ### Add file
 
-1. Add the file to the `Index/Staging` area again.
+2. Add the file to the `Index/Staging` area again.
 
 ```{bash}
 $ git add "CrepeRecipe.md"
@@ -64,7 +71,7 @@ $ git add "CrepeRecipe.md"
 
 ### Publish file
 
-1. Commit the file to the `local repository` with a new message.
+3. Commit the file to the `local repository` with a new message.
 
 ```{bash}
 $ git commit -m "Updates to crepe recipe submission to the Recipe Book"
@@ -72,7 +79,7 @@ $ git commit -m "Updates to crepe recipe submission to the Recipe Book"
  1 file changed, 1 insertion(+), 1 deletions(-)
 ```
 
-2.  Push the file from the local repository `master` branch to the remote `origin` repository `master` branch. This time we don't need to use the -u.
+4.  Push the file from the local repository `master` branch to the remote `origin` repository `master` branch. This time we don't need to use the -u.
  
 ```{bash}
 $ git push  origin master
