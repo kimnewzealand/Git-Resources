@@ -31,7 +31,7 @@ $ git init
 $ ls -a
 .	..	.git
 ```
-Add the remote repository using the link on the clipboard.
+6. Add the remote repository using the link on the clipboard.
 
 ```
 $ git remote add origin GithubLink
@@ -48,7 +48,7 @@ $ git remote -v
 
 ## Basic workflow
 
-Let's check the status of our project to ensure everything is set up correctly.
+1. Let's check the status of our project to ensure everything is set up correctly.
 
 ```
 $ git status
@@ -60,10 +60,15 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ```
 
-At this point, still nothing in the project is tracked. To start version control we will need to create files or make changes then add and commit files.
+2. At this point, still nothing in the project is tracked. To start version control we create files or make changes, then add all the changes.
 
 ```
 $ git add -A
+```
+
+3. Now check the status of the project again.
+
+```
 $ git status
 On branch master
 
@@ -73,16 +78,19 @@ Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
 
         new file:   filename.md
+```
+
+4. Commit the changes.
 
 
-
+```
 $ git commit -m "commit message"
 [master (root-commit) ba5df6a] Commit git simple example
  1 file changed, 98 insertions(+)
  create mode 100644 filename.md
 ```
 
-Push the file from the `local repository` `master` branch to the `origin` or `remote repository` `master` branch. The -u is used for the first push to set the `upstream` link between the two repositories.
+5. Push the file from the `local repository` `master` branch to the `origin` or `remote repository` `master` branch. The -u is used for the first push to set the `upstream` link between the two repositories.
 
 ```
 $ git push -u origin master
@@ -97,23 +105,22 @@ Each file in your `working directory` can be tracked or untracked.
 
 ## Collaberative workflow
 
-If you want to propose a change to someone else's repository,`anotherrepo`, then first fork the repo in GitHub.
+1. If you want to propose a change to someone else's repository,`anotherrepo`, then first fork the repo in GitHub.
 
 This creates a copy of the repo `anotherrepo` in your GitHub account.
 
-Go to Git Bash and clone the repo `anotherrepo`.
+2. Go to Git Bash and clone the repo `anotherrepo`.
 
-1. In the command line, go to your root folder, or browse in explorer right click "Git Bash here" on the folder.
-2. Make a clone copy of the `anotherrepo` repo. The clone command will create a new directory named after the project with a copy of the files and will also will create  a new subdirectory named .git and a remote called origin.
+Make a clone copy of the `anotherrepo` repo. The clone command will create a new directory named after the project with a copy of the files and will also will create  a new subdirectory named .git and a remote called origin.
 
 ```
 -- Making a copy of the repository
 $ git clone anotherrepo
 ```
 
-Next follow the basic steps above to make changes and push to `anotherrepo`. Ensure you change to the `anotherrepo` folder in Git Bash.
+3. Next follow the basic steps above to make changes and push to `anotherrepo`. Ensure you change to the `anotherrepo` folder in Git Bash.
 
-Go to GitHub and the forked `anotherrepo` on your GitHub and create a new pull request.
+4. Go to GitHub and the forked `anotherrepo` on your GitHub and create a new pull request.
 
 ## Centralised workflow
 
@@ -137,6 +144,8 @@ Automatic merge failed; fix conflicts and then commit the result.
 Edit the file to and then follow the basic steps above to make changes and push to `sharedrepo`.
 
 Go to GitHub and the forked `anotherrepo` on your GitHub and create a new pull request.
+
+**TIP** In the command line, go to your root folder, or browse in explorer right click "Git Bash here" on the folder
 
 ## Resources
 

@@ -38,6 +38,7 @@ If you are going to work with a remote with a name other than origin, eg upstrea
 git remote add upstream https://github.com/kimnewzealand/Recipes 
 ```
 
+Now change to the `Recipes` folder.
 
 ```{bash}
 git cd Recipes 
