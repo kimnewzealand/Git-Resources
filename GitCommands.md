@@ -39,6 +39,7 @@ Remotes
 + `git remote show <remote name>` shows which branch is automatically pushed to when you run git push while on certain branches. It also shows you which remote branches on the server you don't yet have, which remote branches you have that have been removed from the server, and multiple local branches that are able to merge automatically with their remote-tracking branch when you run git pull.
 + `git remote rename <remote name> <new remote name>` rename a remote
 + `git remote remove <remote name>` remove a remote
++ `git remote -v` lists the remotes that are configured
 
 Branches
 
@@ -60,9 +61,13 @@ Status
 + `git show <hash>` view the details of a specific commit, with the first few characters of the commit's hash
 + `git annotate <filename>` shows who made the last change to each line of a file and when
 
+Clone
+
++ `git clone <remote name>` to clone a repo and download a copy of a repo to a local folder. This automatically creates the remote called origin.
+
 Add
 
-+ `git add` adds from your working directory to your staging area
++ `git add` adds from your working directory to your staging area, ie specifies what will go in a snapshot
 + `git add <filename>` stages a file
 + `git add -A` stages all new, modified and deleted
 + `git add <foldername>/*` adds folder and contents to your staging area
@@ -79,7 +84,7 @@ Undo
 
 Commit
 
-+ `git commit -m "<message>"` commits the file with the snapshot to the `local repository` locally. The commit records the changes to the file.
++ `git commit -m "<message>"` commits the file with the snapshot to the `local repository` locally. The commit records the changes to the file ie actually takes the snapshot and makes a permanent record of it
 
 Fetch
 

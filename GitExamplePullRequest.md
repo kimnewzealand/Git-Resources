@@ -1,10 +1,12 @@
-# GIT Simple Example File with Branches Using Git Bash and R
+# GIT Simple Example Pull Request with Branches Using Git Bash and R
 
 + [Showing remotes](#showing-remotes)
 + [Fork files](#fork-files)
++ [Clone repo](#clone-repo)
 + [Switching branches](#switching-branches)
 + [Add file](#add-file)
 + [Publish file](#publish-file)
++ [Create pull request](#create-pull-request)
 + [Resources](#resources)
 
 
@@ -14,19 +16,43 @@
 
 In `GitExampleCHanges` we published a crepe recipe **CrepeRecipe.md** after making one change. Before we do any further work, we will consider remotes. So far we have been working with `origin` in kimnewzealand github.
 
-1. Martha Stewart has got a github account and publishes her recipes there so we will add a remote called `martha`.
+Martha Stewart has got a GitHub account and publishes her recipes there.
+
+
+### Fork files
+
+1. We are now going to make some proposed changes to push back to her repo. First we need to fork the repo https://github.com/martha/Recipes/ in GitHub github.com using the fork button to https://github.com/kimnewzealand/Recipes.
+
+
+### Clone repo
+
+1. We then return to the Git Bash command line to prepare our local environment. First clone the repo `Recipes` to download a copy of the repo `Recipes` locally.
 
 ```{bash}
-$ git remote add martha https://github.com/martha/Recipes.git
+git clone https://github.com/kimnewzealand/Recipes 
 ```
 
-2. Let's take a look at the details of the remote. This git command lists the URL for the remote repository as well as the tracking branch information. Currently our `HEAD` is pointing to the `master` branch. 
+If you are going to work with a remote with a name other than origin, eg upstream then use this command:
 
 ```{bash}
-$ git remote show martha
-* remote martha
-  martha https://github.com/martha/Recipes.git (fetch)
-  martha https://github.com/martha/Recipes.git (push)
+git remote add upstream https://github.com/kimnewzealand/Recipes 
+```
+
+
+```{bash}
+git cd Recipes 
+```
+
+### Switching branches
+
+
+1. Let's take a look at the details of the remote. This git command lists the URL for the remote repository as well as the tracking branch information. Currently our `HEAD` is pointing to the `master` branch. 
+
+```{bash}
+$ git remote show origin
+* remote origin
+  origin https://github.com/kimnewzealand/Recipes.git (fetch)
+  origin https://github.com/kimnewzealand/Recipes.git (push)
   HEAD branch: master
   Remote branches:
     master                               tracked
@@ -37,26 +63,19 @@ $ git remote show martha
     master pushes to master (up to date)
 ```
 
-### Fork files
 
-1. We are now going to pull selected recipes to make some proposed changes to push back to her repo. First we need to fork the repo https://github.com/martha/Recipes/ in github.com. We then return to the command line and clone the repo `Recipes`.
-
-```{bash}
-git clone https://github.com/martha/Recipes 
-```
-
-### Switching branches
-
-1. As we can see, martha has a `dev-branch` so we will switch to this branch and work on one of her in development crepe recipes.
+2. As we can see, martha has a `dev-branch` so we will switch to this branch and work on one of her in development crepe recipes.
 
 ```{bash}
 $ git checkout dev-branch
 Switched to branch 'dev-branch'
 ```
 
+In R if you make changes to an R package then remember to run devtools:check() to regenerate the documentation and rebuild the package.
+
 ### Add file
 
-1. Once ewe have made changes we then add the file `CrepeRecipeProposal.md` to the `Index/Staging` area.
+1. Once we have made changes we then add the file `CrepeRecipeProposal.md` to the `Index/Staging` area.
 
 ```{bash}
 $ git add "CrepeRecipeProposal.md"
@@ -82,9 +101,13 @@ Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 394 bytes | 182.00 KiB/s, done.
 Total 3 (delta 1), reused 0 (delta 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/martha/Recipes.git
+To https://github.com/kimnewzealand/Recipes.git
    ca5df6a..egf78f8  dev-branch -> dev-branch
 ```
+
+### Create a pull request
+
+Go to https://github.com/martha/Recipes/ in GitHub and create a new pull request using the "New pull request" button, then "Create pull request" botton adding comments.
 
 ## Resources
 
